@@ -1,0 +1,28 @@
+ 
+1 git branch  branchName创建分支
+
+2 git tag 给固定的commit作标记
+
+3 git checkout branchName 在分支之间切换
+
+4 git stash 在切换分支之前保证修改
+
+5 git merge 合并分支
+
+git log --oneline --decorate --all 查看历史记录
+ 
+tag 两种  
+ 
+
+   git tag tagname id  轻量级的只是本地的引用
+
+  git tag --a tagname id  存储在git仓库里面的 当你需要时可以推送到服务器上共享
+
+
+ merge 有两种
+
+ git merge branchName 将branchName分支上的改变同步到master分支上
+
+ git  checkout -b branchName 创建branchName分支并且切换到该分支
+
+ git merge --abort 放弃此次合并

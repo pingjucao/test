@@ -1,0 +1,92 @@
+  1使用40个16进制的SHA-1Hash 来唯一标识对象
+
+
+ 2 4种对象
+
+ blob 文本文件或者二进制文件等
+
+ tree 文件目录
+
+ commit 历史提交
+
+ tag指向固定的历史提交
+
+tag-->commit-->tree-->包含其他的tree和blob
+
+文件名存储在 tree对象中，而相同的内容指存储一份在blob对象中
+
+
+创建仓库 
+
+ 1裸仓库 不带服务区 通常在服务器上方便协作
+
+  2
+
+1 git init  目录名
+
+ git init --bare 目录名  创建裸仓库
+
+
+2 git clone 裸仓库名/ 新仓库名 
+
+3进入所需文件夹  git init 
+
+有三个区域  working directory  工作区
+  
+           staging area  暂存区
+
+            history repository 历史区
+
+  working directory----stage files-->staging area---commit-->history repository
+
+  history respository--------checkout the project------>work directory
+
+
+  stage files----对应 git add命令
+
+ commit ----对应 git commit命令
+
+  git status  工作区和暂存区的区别
+
+  git rm  从暂存区和工作区中删除我们不需要的
+
+ git rm --cached filename只删除暂存区中的文件
+
+  git mv  在工作区中移动文件
+
+ gitignore  确保工作区中不想被添加到暂存区和历史区中去
+
+ touch name 创建文件 该文件没有任何拓展名
+
+ ls 列出当前位置的文件
+
+git add filename 将文件添加到暂存区
+git add -A 将整个工作区中的文件添加到暂存区中
+
+ git add fileName 将文件添加到暂存区
+  
+ git commit -m record    提交暂存区 并且写一些备注
+ 
+ vim name  编辑一个文件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ls 列出当前文件夹中的内容

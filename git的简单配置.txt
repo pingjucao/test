@@ -1,0 +1,65 @@
+git config --help  查看命令帮助
+
+git help config  查看命令帮助
+
+which -a git 获取git有几个
+
+git --version 获取当前git的版本
+
+git config --  按Tab键，将显示所有参数
+
+git的最基本配置
+
+git config --gobal user.name  name
+
+git config --gobal user.email email 
+
+用于显示这个文件的作者是谁或者是谁修改了
+
+
+git 配置的三个级别  
+
+git config --system 针对当前系统
+
+git config --global 针对当前用户 
+
+git config --local 针对当前仓库
+
+
+获得git的帮助文档
+
+git config --help
+
+git help config
+
+man git-config //传统方式
+
+增加
+
+git config --gobal key  value  //没有这个键值时时增加 有这个键值对是修改
+
+git config --gobal --add  key value  //参数add 表示可以有多个同样的键值对
+
+
+查询
+
+git config key
+
+git config --get key
+
+git config  --list --global 获得所有的键值对
+
+git show  id查看该对象信息
+
+删除
+
+git config --gobal --unset key //有多个同样的键值对的时候要加上value才能删除
+
+修改
+
+git config --gobal key  value  //没有这个键值时时增加 有这个键值对是修改
+
+
+起别名
+
+git config --gobal alias.name  truename
